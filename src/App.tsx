@@ -1,13 +1,38 @@
 import "./App.css";
 
-function App() {
-  return (
-    <>
-      <div className="bg-amber-50 h-screen w-screen flex items-center justify-center">
-        <h1 className="text-3xl font-bold underline">Docuisine</h1>
-      </div>
-    </>
-  );
-}
+import RecipesPage from "@/pages/recipes";
+import CookbooksPage from "@/pages/cookbooks";
+import ShoppingListPage from "@/pages/shopping-list";
+import Layout from "@/components/layout";
 
-export default App;
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  { path: "/", element: <Navigate to="/recipes" replace /> },
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/recipes",
+        element: <RecipesPage />,
+      },
+      {
+        path: "/cookbooks",
+        element: <CookbooksPage />,
+      },
+      {
+        path: "/shopping-list",
+        element: <ShoppingListPage />,
+      },
+    ],
+  },
+]);
+
+export default function App() {
+  return <RouterProvider router={router} />;
+}
