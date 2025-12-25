@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const TitleBar = () => {
   return (
-    <div className="w-full flex py-[1.2vh] px-[10%] justify-between">
+    <div className="w-full flex justify-between">
       <Link to="/" className="flex items-center">
         <HorizontalLogo />
       </Link>

@@ -4,7 +4,7 @@ import { UtensilsCrossedIcon, BookTextIcon, ListTodo } from "lucide-react";
 const NavBar = () => {
   const iconSize = "1.2em";
   return (
-    <div className="w-full flex bg-amber-50 px-[10%] shadow-md">
+    <div className="w-full flex bg-amber-50">
       <NavBarBtn title="Recipes">
         <UtensilsCrossedIcon size={iconSize} />
       </NavBarBtn>
