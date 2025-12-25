@@ -10,7 +10,7 @@ const Button = ({
     className?: string;
 }) => {
   return (
-    <button className={`${className}`} aria-label={label}>
+    <button className={`custom ${className}`} aria-label={label}>
       <div className="flex gap-2">{children}</div>
     </button>
   );

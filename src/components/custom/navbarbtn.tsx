@@ -11,7 +11,7 @@ const NavBarBtn: React.FC<NavBarBtnProps> = ({ title, children }) => {
   const isActive = path.includes(normalizedTitle);
 
   const baseClasses =
-    "flex items-center justify-center gap-2 border-b-4 transition-colors rounded-t-md";
+    "custom flex items-center justify-center gap-2 border-b-4 transition-colors rounded-t-md";
   const activeClasses = "border-amber-400 text-amber-950";
   const inactiveClasses =
     "border-transparent text-muted-foreground hover:border-amber-200 hover:text-amber-950 hover:bg-amber-100/60";
