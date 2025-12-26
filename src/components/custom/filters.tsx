@@ -13,7 +13,7 @@ const Filters = () => {
     },
   ];
   return (
-    <div className="flex flex-col border shadow-xs items-start p-4 rounded-md min-w-fit w-[12vw] overflow-scroll max-h-[80vh]">
+    <div className="flex flex-col border shadow-xs items-start p-4 rounded-md min-w-fit max-w-[12vw] overflow-scroll h-fit max-h-[80vh]">
       <h2 className="text-lg font-semibold mb-8">Filters</h2>
 
       <ul className="flex flex-col gap-8">
