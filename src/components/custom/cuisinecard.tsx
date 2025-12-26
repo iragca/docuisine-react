@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 
 const CuisineCard = ({ src, alt }: { src: string; alt: string }) => {
+    const normalizedPath = alt.toLowerCase().replace(/\s+/g, '-');
   return (
     <Link
-      to={`/cuisine/${alt.toLowerCase()}`}
+      to={`/cuisine/${normalizedPath}`}
       className="flex flex-col items-center gap-2"
     >
       <div className="h-24 w-24 overflow-hidden rounded-md border shadow-sm">
