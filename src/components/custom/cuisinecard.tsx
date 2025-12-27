@@ -12,7 +12,7 @@ const CuisineCard = ({ category }: { category: Category }) => {
         <img
           src={`https://pub-d3ef28b83a854575bfa54225e768a452.r2.dev/${category.preview_img}`}
           alt={category.name}
-          className="h-full w-full object-cover transition-transform duration-100 hover:scale-105 bg-sidebar-accent"
+          className="h-full w-full object-cover transition-transform duration-100 hover:scale-105 bg-sidebar-accent text-secondary-foreground"
           id={category.name}
         />
       </div>
